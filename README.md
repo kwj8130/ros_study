@@ -15,7 +15,7 @@ my first ros study
 ### roscore
 - ROS Master를 실행시키는 명령어.
 - 노드를 켜기 전에 가장 먼저 실행
-'''bash
+'''bash 
     roscore
 '''
 
@@ -24,4 +24,14 @@ my first ros study
 - rosrun 패키지이름 노드이름
 '''bash
     rosrun <패키지이름> <노드이름>
+'''
+
+### catkin_create_pkg
+- 현재 위치한 작업 공간에 패키지를 생성한다.
+- catkin_creat_pkg 패키지이름 의존성
+'''bash
+    catkin_create_pkg <패키지이름> <의존성1> <의존성2>.... 
+'''
+''' bash
+    catkin_create_pkg topic_tutorial roscpp rospy std_msgs
 '''

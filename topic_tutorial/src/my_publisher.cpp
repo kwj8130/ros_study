@@ -12,13 +12,13 @@ int main(int argc, char** argv) //반환데이터자리, 함수자리()
     // 토픽은 ("my_topic")이며, 퍼블리셔큐(queue) 사이즈는 (100)이다.
 
     ros::Publisher pub = nh.advertise<std_msgs::String>("my_topic", 100); 
-    // 보통은 앞에 자료형 뒤에는 변수이름이 들어감 Publisher : 자료형, pub : 변수이름, < > 어떤 형태(타입)의 메세지를 쓸것인가?, nh.advertise - 퍼블리셔를 만드는 함수
+    // 앞에 자료형 뒤에는 변수이름이 들어감 Publisher : 자료형, pub : 변수이름, < >의 안에는 어떤 형태(타입)의 메세지를 쓸것인가를 작성, nh.advertise - 퍼블리셔를 만드는 함수
     
 
     ros::Rate loop_rate(10); // 루프 주기를 10Hz로 설정한다.(0.1초마다), Rate : 자료형(타입)
     
     std_msgs::String msg; // 보낼 메세지함수
-    msg.data = "Hello"; // msg의 data라는 곳에 문자열(스트링) "Hello"를 넣는다. 구글에 std_msgs는 어떤 자료형을 쓰는지는 구글링을하면 나온다.(다른 것들도 마찬가지)
+    msg.data = "Hello"; // msg의 data라는 곳에 문자열(스트링이기 때문) "Hello"를 넣는다. 구글에 std_msgs는 어떤 자료형을 쓰는지는 구글링을하면 나온다.(다른 것들도 마찬가지)
 
     while (ros::ok()) // ros(프로그램자체)가 켜져있는동안 퍼블리셔한다
     {

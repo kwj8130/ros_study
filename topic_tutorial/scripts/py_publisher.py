@@ -12,9 +12,9 @@ def talker():
     msg = String() # 메세지는 스트링타입이다
     msg.data = "Hi"
 
-    while not rospy.is_shutdown(): # 안꺼졌으면 트루, 결국 계속 반복
+    while not rospy.is_shutdown(): # 안꺼졌으면 트루, 결국 켜져있기때문에 계속 반복
         pub.publish(msg) # 위의 메시지를 퍼블리시함
-        loop_rate.sleep()
+        loop_rate.sleep() # 주기에 맞춰주려고
 
 if __name__ == "__main__": # __name__변수가 __main__일때만 talker를 실행 즉, 이 파일을 먼저 실행시킬때가 진짜 name이 되고, 먼저 실행을 시켰기 때문에 다른곳에서 작동을 시켜도 실행이안된다.
     try:

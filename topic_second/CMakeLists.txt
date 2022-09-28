@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(topic_tutorial)
+project(topic_second)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -104,7 +104,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES topic_tutorial
+#  LIBRARIES topic_second
 #  CATKIN_DEPENDS roscpp rospy std_msgs
 #  DEPENDS system_lib
 )
@@ -122,7 +122,7 @@ include_directories(
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/topic_tutorial.cpp
+#   src/${PROJECT_NAME}/topic_second.cpp
 # )
 
 ## Add cmake target dependencies of the library
@@ -133,8 +133,8 @@ include_directories(
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(my_publisher src/my_publisher.cpp) ## my_publisher 라는 파일의 실행파일(노드)을 만들어라
-add_executable(my_subscriber src/my_subscriber.cpp) ## my_subscriber 라는 파일의 실행파일(노드)을 만들어라
+add_executable(second_pub src/second_pub.cpp) # 소스코드를 가지고 파일을 실행시켜라의 의미
+add_executable(second_sub src/second_sub.cpp) # 이걸로 소스코드를 실행시켜라
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -144,12 +144,12 @@ add_executable(my_subscriber src/my_subscriber.cpp) ## my_subscriber 라는 파�
 
 ## Add cmake target dependencies of the executable
 ## same as for the library above
-add_dependencies(my_publisher ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-add_dependencies(my_subscriber ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(second_pub ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(second_sub ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(my_publisher ${catkin_LIBRARIES})
-target_link_libraries(my_subscriber ${catkin_LIBRARIES})
+target_link_libraries(second_pub ${catkin_LIBRARIES})
+target_link_libraries(second_sub ${catkin_LIBRARIES})
 
 #############
 ## Install ##
@@ -161,7 +161,7 @@ target_link_libraries(my_subscriber ${catkin_LIBRARIES})
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
 catkin_install_python(PROGRAMS
-  scripts/py_publisher.py scripts/py_subscriber.py
+  scripts/py_second_pub.py scripts/py_second_sub.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
@@ -198,7 +198,7 @@ catkin_install_python(PROGRAMS
 #############
 
 ## Add gtest based cpp test target and link libraries
-# catkin_add_gtest(${PROJECT_NAME}-test test/test_topic_tutorial.cpp)
+# catkin_add_gtest(${PROJECT_NAME}-test test/test_topic_second.cpp)
 # if(TARGET ${PROJECT_NAME}-test)
 #   target_link_libraries(${PROJECT_NAME}-test ${PROJECT_NAME})
 # endif()

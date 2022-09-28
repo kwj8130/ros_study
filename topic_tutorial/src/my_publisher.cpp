@@ -17,8 +17,8 @@ int main(int argc, char** argv) //반환데이터자리, 함수자리()
 
     ros::Rate loop_rate(10); // 루프 주기를 10Hz로 설정한다.(0.1초마다), Rate : 자료형(타입)
     
-    std_msgs::String msg;
-    msg.data = "Hello"; // msg의 data에 문자열 "Hello"를 넣는다. 구글에 std_msgs는 어떤 자료형을 쓰는지는 구글링을하면 나온다.(다른 것들도 마찬가지)
+    std_msgs::String msg; // 보낼 메세지함수
+    msg.data = "Hello"; // msg의 data라는 곳에 문자열(스트링) "Hello"를 넣는다. 구글에 std_msgs는 어떤 자료형을 쓰는지는 구글링을하면 나온다.(다른 것들도 마찬가지)
 
     while (ros::ok()) // ros(프로그램자체)가 켜져있는동안 퍼블리셔한다
     {

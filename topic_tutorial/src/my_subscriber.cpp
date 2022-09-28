@@ -5,7 +5,7 @@ void msgCallback(const std_msgs::String::ConstPtr& msg)
 // ConstPtr(c++의 포인터일종), Callback -> 특정이벤트가 호출되는 함수 :: - (std_msgs) 안에 있는 스트링자료에 접근해 선언한다는 의미
 
 {
-    ROS_INFO("msg : %s", msg->data.c_str()); // 메세지에 데이터라고하는 애를 사용해 꺼낸다. c_str(c스타일의 스트링을 사용한다.) 
+    ROS_INFO("msg : %s", msg->data.c_str()); // 메세지에 데이터라고하는 애를 사용해 꺼낸다. c_str(c스타일의 스트링을 사용한다.), -> = *와 .을 합친것
 }
 
 int main(int argc, char** argv)

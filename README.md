@@ -6,10 +6,15 @@ my first ros study
 - my_publisher, my_subscriber 노드 생성
 - cm으로 빌드실행 후 roscore, rosrun 실행
 
-### 2022년 9월 28일 ROS 파이썬
+### 2022년 9월 28일 ROS 학습내용
 - topic_tutorial 패키지에 python script 추가
 - py_publisher.py, py_subscriber.py 노드생성
 - cm으로 빌드실행 후 roscore, rosrun 실행
+
+- topic_second 패키지 생성
+- second_pub, second_sub, py_second_pub, py_second_sub 노드 생성
+- 과제 1
+
 
 ## ROS 명령어
 ### roscore

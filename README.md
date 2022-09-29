@@ -2,11 +2,13 @@
 my first ros study
 
 ### 2022년 9월 27일 ROS 학습시작
+- [topic_tutorial](./topic_tutorial) 
 - topic_tutorial 패키지생성
 - my_publisher, my_subscriber 노드 생성
 - cm으로 빌드실행 후 roscore, rosrun 실행
 
 ### 2022년 9월 28일 ROS 학습내용
+- [topic_tutorial](./topic_tutorial) 
 - topic_tutorial 패키지에 python script 추가
 - py_publisher.py, py_subscriber.py 노드생성
 - cm으로 빌드실행 후 roscore, rosrun 실행
@@ -63,3 +65,16 @@ my first ros study
 3. 안에 내용을 작성한다.
 4. CMakelists.txt 에서 설정한다.
 5. 빌드 시 생성된다.
+
+# service_tutorial
+- 직접 작성한 AddTwoInts 서비스로 통신하는 패키지
+
+### service node
+- name :
+- service :
+- srv :
+- 노드 설명
+
+## srv 만드는 법
+1. 패키지 안에 srv 디렉토리를 만든다.
+2. .srv 확장자의 파일을 만든다.

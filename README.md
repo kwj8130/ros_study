@@ -15,6 +15,15 @@ my first ros study
 - second_pub, second_sub, py_second_pub, py_second_sub 노드 생성
 - 과제 1
 
+### 2022년 9월 29일 ROS 학습내용
+- [msg_tutorial](./msg_tutorial)
+    - msg_tutorial 패키지 생성
+    - msg 디렉토리에 Mymsg.msg 생성
+    - msg_publisher, msg_subscriber, py_msg_pub.py, py_msg_sub.py 노드생성
+    - 빌드, 실행
+
+
+
 
 ## ROS 명령어
 ### roscore
@@ -40,3 +49,17 @@ my first ros study
 ''' bash
     catkin_create_pkg topic_tutorial roscpp rospy std_msgs
 '''
+
+### Publisher Node (정리할 예시)
+- name :
+- topic :
+- msg : 
+- 노드 설명
+
+
+## msg 만드는 법
+1. 패키지 안에 msg 디렉토리를 만든다. (패키지 생성 시 언어 및 모듈작성에서 message_generation를 추가.)
+2. .msg 확장자의 파일을 만든다. (Mymsg.msg로 생성했다.)
+3. 안에 내용을 작성한다.
+4. CMakelists.txt 에서 설정한다.
+5. 빌드 시 생성된다.

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import rospy
 from service_tutorial.srv import AddTwoInts # 패키지이름, 우리가만든 srv를 꺼낸다
-import sys
+import sys # a와 b를 가져오기위함
 
 def add_two_ints_client(a, b):
 

@@ -1,0 +1,33 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+
+import rospy
+from yh_service.srv import YhSrv, YhSrvRequest
+import sys 
+
+def multiply_client():
+    rospy.init_node("yh_client")
+
+    if len(sys.argv) != 3:
+        rospy.loginfo("rosrun yh_service yh_client.py a b")
+        rospy.loginfo("a, b: int32 number")
+        sys.exit(1)
+
+    yh_client = rospy.ServiceProxy("multiply", YhSrv) #서비스 이름과 서비스 타입을 작성
+
+    req = YhSrvRequest() # request 작성
+    req.a = int(sys.argv[1])
+    req.b = int(sys.argv[2])
+
+    res = yh_client(req) # req값을 클라이언트에 넣고 res를 불러온다.
+
+    try:
+        res = yh_client(req)
+        rospy.loginfo(f"a: {req.a}, b: {req.b}, result: {res.result}")
+        
+    except rospy.ServiceException as e:
+        rospy.logerr(f"Fail: {e}")
+
+
+if __name__ == "__main__":
+    multiply_client()

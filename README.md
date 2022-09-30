@@ -24,7 +24,19 @@ my first ros study
     - msg_publisher, msg_subscriber, py_msg_pub.py, py_msg_sub.py 노드생성
     - 빌드, 실행
 
+### 2022년 9월 30일 ROS 학습내용
+- [과제2 yh_star](./yh_star)
+- for문 활용해서 별 찍기
+    - yh_star 패키지 생성
+    - yh_star_pub, yh_star_sub, yh_star_pub.py, yh_star_sub.py 노드생성
+    - 빌드, 실행
 
+- [과제3 yh_service](./yh_service)
+    - yh_service 패키지 생성
+    - yh_server, yh_client의 .cpp, .py를 작성
+    - 빌드, 실행
+
+# 같은 이름의 서버는 동시에 켤 수 없는게 서비스
 
 
 ## ROS 명령어

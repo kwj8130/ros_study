@@ -37,7 +37,7 @@ my first ros study
     - 빌드, 실행
 
 ### 2022년 10월 4일
-###[param_tutorial](./param_tutorial/)
+### [param_tutorial](./param_tutorial/)
 - param_tutorial 패키지 생성
 - calculate_server, calculate_client, calculate_server.py, calculate_client.py 노드 생성
 - 빌드, 실행

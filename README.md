@@ -36,8 +36,21 @@ my first ros study
     - yh_server, yh_client의 .cpp, .py를 작성
     - 빌드, 실행
 
-# 같은 이름의 서버는 동시에 켤 수 없는게 서비스
+### 2022년 10월 4일
+###[param_tutorial](./param_tutorial/)
+- param_tutorial 패키지 생성
+- calculate_server, calculate_client, calculate_server.py, calculate_client.py 노드 생성
+- 빌드, 실행
+- 파라미터 서버 활용
+- [파라미터 서버 활용](#parameter-server)
 
+### [과제4 yh_dual](./yh_dual/)
+### [과제5 yh_difference](./yh_difference/)
+### [과제6 yh_check](./yh_check/) - 진행중
+
+
+
+### 같은 이름의 서버는 동시에 켤 수 없는게 서비스형
 
 ## ROS 명령어
 ### roscore
@@ -90,3 +103,26 @@ my first ros study
 ## srv 만드는 법
 1. 패키지 안에 srv 디렉토리를 만든다.
 2. .srv 확장자의 파일을 만든다.
+
+### Parameter(변수) Server
+- ROS Master에서 실행되고, 변수들을 담고 있는 서버
+- ros::setParam(), ros::getParam(), rospy.set_param(), rospy.get_param() 등의 함수로 사용
+- command line에서 rosparam으로 사용 가능
+
+- rosparam list
+    - 파라미터 서버의 모든 파라미터를 출력
+
+'''bash
+- juchajam@ubuntu:~$ rosparam list rosparam get <파라미터 이름>
+'''
+
+'''bash
+- juchajam@ubuntu:~$ rosparam get <파라미터 이름>
+    - 파라미터의 값을 출력함
+'''
+
+- rosparam set <파라미터 이름> [파라미터 값]
+    - 파라미터의 값을 지정함
+'''bash
+- juchajam@ubuntu:~$ rosparam set <파라미터 이름> [파라미터 값]
+'''

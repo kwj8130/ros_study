@@ -50,6 +50,7 @@ my first ros study
 - yh_check_distance, yh_check_camera, yh_check_sub, yh_check_sub.py
 - yh_connect_pub, yh_connect_sub_pub, yh_connect_sub.cpp와 .py 생성
 - 빌드, 실행
+- python class로 작성
 
 
 ### [과제4 yh_dual](./yh_dual/)

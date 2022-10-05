@@ -1,4 +1,4 @@
-# ros_study
+# ROS_STUDY
 my first ros study
 
 ### 2022년 9월 27일 ROS 학습시작
@@ -36,21 +36,27 @@ my first ros study
     - yh_server, yh_client의 .cpp, .py를 작성
     - 빌드, 실행
 
-### 2022년 10월 4일
+### 2022년 10월 4일 ROS 학습내용
 ### [param_tutorial](./param_tutorial/)
 - param_tutorial 패키지 생성
+- 과제4, 과제5 패키지 생성
 - calculate_server, calculate_client, calculate_server.py, calculate_client.py 노드 생성
 - 빌드, 실행
 - 파라미터 서버 활용
 - [파라미터 서버 활용](#parameter-server)
 
+### 2022년 10월 5일 ROS 학습내용
+- 과제6, 과제7 패키지 생성
+- yh_check_distance, yh_check_camera, yh_check_sub, yh_check_sub.py
+- yh_connect_pub, yh_connect_sub_pub, yh_connect_sub.cpp와 .py 생성
+- 빌드, 실행
+
+
 ### [과제4 yh_dual](./yh_dual/)
 ### [과제5 yh_difference](./yh_difference/)
-### [과제6 yh_check](./yh_check/) - 진행중
+### [과제6 yh_check](./yh_check/)
+### [과제7 yh_connect](./yh_connect/)
 
-
-
-### 같은 이름의 서버는 동시에 켤 수 없는게 서비스형
 
 ## ROS 명령어
 ### roscore
@@ -103,6 +109,9 @@ my first ros study
 ## srv 만드는 법
 1. 패키지 안에 srv 디렉토리를 만든다.
 2. .srv 확장자의 파일을 만든다.
+
+### 같은 이름의 서버는 동시에 켤 수 없는게 서비스형태다.
+
 
 ### Parameter(변수) Server
 - ROS Master에서 실행되고, 변수들을 담고 있는 서버

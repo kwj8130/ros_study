@@ -155,7 +155,7 @@ $ sudo apt install ros-melodic-teleop-twist-keyboard
 $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 '''
 
-### roslaunch
+### [roslaunch 실습] (#roslaunch)
 - roscore와 launch파일에 있는 노드들을 실행시키는 명령
 - launch 파일은 "패키지 디렉토리/launch'에 만든다.
 - roslaunch 실행

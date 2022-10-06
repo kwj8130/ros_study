@@ -52,6 +52,13 @@ my first ros study
 - 빌드, 실행
 - python class로 작성
 
+### 2022년 10월 6일 ROS 학습내용
+### [yh_turtle](./yh_turtle/)
+- turtlesim 사용
+- turtle_patrol, turtle_keyboard, turtle_clear, turtle_keyboard_clear .cpp, .py파일 생성
+- [teleop_twist_keyboard] 설치
+
+
 
 ### [과제4 yh_dual](./yh_dual/)
 ### [과제5 yh_difference](./yh_difference/)
@@ -136,3 +143,26 @@ my first ros study
 '''bash
 - juchajam@ubuntu:~$ rosparam set <파라미터 이름> [파라미터 값]
 '''
+
+### teleop_twist_keyboard
+- 키보드 입력을 받아 /cmd_vel 토픽의 geometry_msgs/Twist 메세지로 publish하는 노드
+- 설치
+'''bash
+$ sudo apt install ros-melodic-teleop-twist-keyboard
+'''
+- 실행
+'''bash
+$ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+'''
+
+### roslaunch
+- roscore와 launch파일에 있는 노드들을 실행시키는 명령
+- launch 파일은 "패키지 디렉토리/launch'에 만든다.
+- roslaunch 실행
+'''bash
+$ roslaunch <패키지이름> <런치파일이름>
+'''
+- launch 파일은 <launch> </launch> 태그 사이에 내용을 입력한다.
+- node 태그는 패키지 이름, 노드타입, 노드이름을 입력한다.
+- param 태그는 파라미터 이름, 값, 타입을 입력한다.
+- rosluanch

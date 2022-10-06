@@ -159,9 +159,11 @@ $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 - roscore와 launch파일에 있는 노드들을 실행시키는 명령
 - launch 파일은 "패키지 디렉토리/launch'에 만든다.
 - roslaunch 실행
+
 '''bash
 $ roslaunch <패키지이름> <런치파일이름>
 '''
+
 - launch 파일은 <launch> </launch> 태그 사이에 내용을 입력한다.
 - node 태그는 패키지 이름, 노드타입, 노드이름을 입력한다.
 - param 태그는 파라미터 이름, 값, 타입을 입력한다.

@@ -58,6 +58,11 @@ my first ros study
 - turtle_patrol, turtle_keyboard, turtle_clear, turtle_keyboard_clear .cpp, .py파일 생성
 - [teleop_twist_keyboard] 설치
 
+### 2022년 10월 7일 ROS 학습내용
+### [yh_turtle](./yh_turtle/)
+- turtlesim 사용2
+- yh_turtle_circle, yh_turtle_triangle.py, turtle_goal.py 작성
+- 빌드, 실행
 
 
 ### [과제4 yh_dual](./yh_dual/)
